@@ -15,18 +15,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btnPrimerEjercicio = findViewById(R.id.btnPrimerEjercicio);
-        Button btnSegundoEjercicio = findViewById(R.id.btnSegundoEjercicio);
         btnPrimerEjercicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), Ejercicio1.class);
-                startActivity(intent);
-            }
-        });
-        btnSegundoEjercicio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Ejercicio2.class);
                 startActivity(intent);
             }
         });
